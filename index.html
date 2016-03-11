@@ -2,21 +2,35 @@
 <html>
   <head>
     <title>Stephanie Brennan</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+    <div class="container">
+      <nav class="row">
+        <div class="one-half column">
+          <ul class="nav--title">
+            <li class="nav--title--logo"><img src="images/logo-sm.png" /></li>
+            <li>Stephanie Brennan</li>
+          </ul>
+        </div>
+        <div class="one-half column">
+          <ul class="nav--links right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
       </nav>
-      <section>
-        Home
+      <section class="row">
+        <i class="right one-half column home--description">
+          Stephanie is a Nia, who, is a Nia.
+        </i>
       </section>
     </div>
+    <img class="home--img" src="images/self.jpg" />
   </body>
 </html>
