@@ -21,9 +21,21 @@ $(document).ready(function() {
     $el.data('original-position', position);
   }
 
-  function moveOnscreen($el, windowWidth, windowHeight) {
-    $el.show().animate($el.data('original-position'));
+
+
+  function resetProjects(e) {
+    $(".projects li").each(function () {
+      var $this = $(this);
+      $this.show().animate($this.data('original-position'));
+    });
+    $(".project-details").fadeOut(500);
   }
+
+  $(document).on("keyup", function(e) {
+    if(e.keyCode === 27) { // esc
+      resetProjects();
+    }
+  });
 
   $(".projects li").on("click", function(e) {
     var $this = $(this),
@@ -42,11 +54,6 @@ $(document).ready(function() {
     $($this.data("target")).fadeIn(700);
   });
 
-  $(".project-details-close").on("click", function(e) {
-    $(".projects li").each(function() {
-      moveOnscreen($(this));
-    });
-    $(".project-details").fadeOut(500);
-  });
+  $(".project-details-close").on("click", resetProjects);
 
 });

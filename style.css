@@ -115,6 +115,36 @@ nav li {
 }
 
 .project-details-close {
+  content: '';
   float: right;
-  cursor: pointer;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.project-details-close::before,
+.project-details-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.project-details-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.project-details-close:hover::before,
+.project-details-close:hover::after {
+	background: #333;
 }
