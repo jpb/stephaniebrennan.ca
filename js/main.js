@@ -35,7 +35,17 @@ $(document).ready(function() {
   }
 
   function resetProjects() {
-    $("html, body").animate({ scrollTop: 0 }, 200, "swing", function() {
+    var scrollTime;
+
+    if(document.body.scrollTop === 0) {
+      scrollTime = 0;
+    } else if(document.body.scrollTop < 100) {
+      scrollTime = 100;
+    } else {
+      scrollTime = document.body.scrollTop / 10;
+    }
+
+    $("html, body").animate({ scrollTop: 0 }, scrollTime, "swing", function() {
       $(".project-details").fadeOut(500);
 
       $(".projects li").each(function () {
@@ -50,23 +60,27 @@ $(document).ready(function() {
 
   function escProject(e) {
     if(e.keyCode === 27) { // esc
-      navigateTo("#projects");
+      window.location.hash = "#projects";
     }
   }
 
   function switchToAbout() {
-    $(".nav-about").fadeOut(500);
-    $(".nav-projects").fadeIn(500);
     $(".projects-container").fadeOut(500);
     $(".about-container").fadeIn(500);
+
+    $(".nav-about").fadeOut(500);
+    $(".nav-projects").fadeIn(500);
+
     $(document).off("keyup", escProject);
   }
 
   function switchToProjects() {
-    $(".nav-projects").fadeOut(500);
-    $(".nav-about").fadeIn(500);
     $(".about-container").fadeOut(500);
     $(".projects-container").fadeIn(500);
+
+    $(".nav-projects").fadeOut(500);
+    $(".nav-about").fadeIn(500);
+
     $(document).on("keyup", escProject);
   }
 
