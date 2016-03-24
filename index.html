@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Stephanie Brennan</title>
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +11,11 @@
       <nav class="row">
         <div class="one-half column">
           <ul class="nav--title">
-            <li class="nav--title--logo"><a href="index.html"><img src="images/logo.png" /></a></li>
+            <li class="nav--title--logo">
+              <a href="index.html">
+                <img src="images/logo.png" />
+              </a>
+            </li>
             <li><a href="index.html">Stephanie Brennan</a></li>
           </ul>
         </div>
@@ -23,12 +26,40 @@
           </ul>
         </div>
       </nav>
-      <section class="row">
-        <i class="right one-half column home--description">
-          Stephanie is a Nia, who, is a Nia.
-        </i>
-      </section>
+      <ul class="projects">
+        <li data-target="#project-lowen-liebling"
+            data-name="L&ouml;wen Liebling">L</li>
+        <li data-name="Merry Men Mills">M</li>
+        <li data-name="Provision">P</li>
+        <li data-name="Wilhelm">W</li>
+        <li data-name="Minx Uncommon Beer">M</li>
+        <li data-name="Lexus">L</li>
+        <li data-name="J2 Floss">J</li>
+        <li data-name="Chorus">C</li>
+      </ul>
+      <div class="project-container"></div>
+      <div class="project-image"></div>
+      <div class="project-details-container">
+        <div id="project-lowen-liebling" class="project-details">
+          <span class="project-details-close">x</span>
+          <h1>L&ouml;wen Liebling</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="http://placehold.it/350x350" />
+          <img src="http://placehold.it/350x350" />
+          <img src="http://placehold.it/350x350" />
+          <img src="http://placehold.it/350x350" />
+        </div>
+      </div>
     </div>
-    <img class="home--img" src="images/self.jpg" />
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
