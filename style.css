@@ -116,6 +116,10 @@ nav li {
   display: none;
 }
 
+.project-details img {
+  width: 1050px;
+}
+
 .project-details-close {
   float: right;
 	position: absolute;

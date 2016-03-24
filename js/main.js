@@ -39,11 +39,14 @@ $(document).ready(function() {
   }
 
   function resetProjects(e) {
-    $(".projects li").each(function () {
-      var $this = $(this);
-      $this.show().animate($this.data('original-position'));
+    $("html, body").animate({ scrollTop: 0 }, 200, "swing", function() {
+      $(".project-details").fadeOut(500);
+
+      $(".projects li").each(function () {
+        var $this = $(this);
+        $this.show().animate($this.data('original-position'));
+      });
     });
-    $(".project-details").fadeOut(500);
   }
 
   function escProject(e) {
