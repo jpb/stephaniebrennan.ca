@@ -21,13 +21,9 @@ $(document).ready(function() {
     $el.data('original-position', position);
   }
 
-  function showProject(e) {
-    var $this = $(this),
-        top = $this.position().top + 85,
-        left = $this.position().left + 140,
-        $project = $(".project-container");
-
-    var $window = $(window),
+  function showProject(target) {
+    var $project = $(".project-container"),
+        $window = $(window),
         windowWidth = $window.width(),
         windowHeight = $window.height();
 
@@ -35,46 +31,75 @@ $(document).ready(function() {
       moveOffscreen($(this), windowWidth, windowHeight);
     });
 
-    $($this.data("target")).fadeIn(700);
+    $(target).fadeIn(700);
   }
 
-  function resetProjects(e) {
+  function resetProjects() {
     $("html, body").animate({ scrollTop: 0 }, 200, "swing", function() {
       $(".project-details").fadeOut(500);
 
       $(".projects li").each(function () {
-        var $this = $(this);
-        $this.show().animate($this.data('original-position'));
+        var $this = $(this),
+            originalPosition = $this.data('original-position');
+        if(originalPosition) {
+          $this.show().animate(originalPosition);
+        }
       });
     });
   }
 
   function escProject(e) {
     if(e.keyCode === 27) { // esc
-      resetProjects();
+      window.location.hash("#projects");
     }
   }
 
-  function switchToAbout(e) {
-    $(this).fadeOut(500);
+  function switchToAbout() {
+    $(".nav-about").fadeOut(500);
     $(".nav-projects").fadeIn(500);
     $(".projects-container").fadeOut(500);
     $(".about-container").fadeIn(500);
     $(document).off("keyup", escProject);
   }
 
-  function switchToProjects(e) {
-    $(this).fadeOut(500);
+  function switchToProjects() {
+    $(".nav-projects").fadeOut(500);
     $(".nav-about").fadeIn(500);
     $(".about-container").fadeOut(500);
     $(".projects-container").fadeIn(500);
     $(document).on("keyup", escProject);
   }
 
-  $(document).on("keyup", escProject);
-  $(".projects li").on("click", showProject);
-  $(".project-details-close").on("click", resetProjects);
-  $(".nav-about").on("click", switchToAbout);
-  $(".nav-projects").on("click", switchToProjects);
+  function navigateTo(newHash, oldHash) {
+    console.log(newHash, oldHash);
+    var isProject = newHash.indexOf("#project-") === 0;
+    if (newHash === "#about") {
+      switchToAbout();
+    } else if (newHash === "#projects" && oldHash === "#about") {
+      switchToProjects();
+    } else if (newHash === "#projects") {
+      resetProjects();
+    } else if (!newHash || newHash === "#") { // Close X
+      resetProjects();
+    } else if (isProject && oldHash === "#about") {
+      switchToProjects();
+      showProject(newHash);
+    } else if (isProject) {
+      showProject(newHash);
+    } else {
+      console.log("Unknown hash:", newHash, oldHash);
+    }
+  }
 
+  navigateTo(window.location.hash);
+
+  $(document).on("keyup", escProject);
+
+  $(window).on("hashchange", function(e) {
+    var oldHash;
+    try {
+      oldHash = $("<a>").attr('href', e.originalEvent.oldURL)[0].hash;
+    } catch (e) {}
+    navigateTo(window.location.hash, oldHash);
+  });
 });
