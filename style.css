@@ -102,6 +102,15 @@ nav li {
 .projects li:nth-child(7) { top: 530px; left: 400px; }
 .projects li:nth-child(8) { top: 530px; left: 800px; }
 
+.projects .lowen-liebling {
+  background: url('images/lowen-liebling-thumb@2x.jpg') top left;
+  transition: background-position 0.4s ease;
+}
+.projects li:hover {
+  background-position: -200px -200px;
+  transition: background-position 0.4s ease;
+}
+
 .project-container {
   position: absolute;
   font-size: 24px
