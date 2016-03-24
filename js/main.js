@@ -50,7 +50,7 @@ $(document).ready(function() {
 
   function escProject(e) {
     if(e.keyCode === 27) { // esc
-      window.location.hash("#projects");
+      navigateTo("#projects");
     }
   }
 

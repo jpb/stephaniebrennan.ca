@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: black;
+  color: #444;
   text-decoration: none;
 }
 
 a:hover {
-  color: black;
+  color: #444;
 }
 
 /* Navigation */
@@ -80,7 +80,7 @@ nav li {
   box-sizing: border-box;
   width: 100px;
   height: 100px;
-  background: black;
+  background: #444;
   color: white;
   text-align: center;
   padding-top: 23px;
@@ -108,11 +108,22 @@ nav li {
 .projects li:nth-child(7) { top: 530px; left: 400px; }
 .projects li:nth-child(8) { top: 530px; left: 800px; }
 
-.projects .lowen-liebling {
-  background: url('images/lowen-liebling-thumb@2x.jpg') top left;
+.projects .lowen-liebling { background: url('images/lowen-liebling-thumb@2x.jpg') top left; }
+.projects .merry-men-mills { background: url('images/merry-men-mills-thumb@2x.jpg') top left; }
+.projects .provision { background: url('images/provision-thumb@2x.jpg') top left; }
+.projects .wilhelm { background: url('images/wilhelm-thumb@2x.jpg') top left; }
+.projects .minx-uncommon-beer { background: url('images/minx-uncommon-beer-thumb@2x.jpg') top left; }
+.projects .minx-uncommon-beer a { color: #444; }
+.projects .lexus { background: #444; }
+.projects .js-floss { background: #444; }
+.projects .chorus { background: url('images/chorus-thumb.jpg') top left; }
+.projects .chorus a { color: #444; }
+
+.projects li {
+  background-position: top left;
+  background-size: 200px !important;
   transition: background-position 0.4s ease;
 }
-
 .projects li:hover {
   background-position: bottom right;
   transition: background-position 0.4s ease;
@@ -130,10 +141,12 @@ nav li {
 
 .project-details {
   display: none;
+  width: 1050px;
 }
 
 .project-details img {
   width: 1050px;
+  margin-top: 5px;
 }
 
 .project-details-close {
