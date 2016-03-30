@@ -9,7 +9,6 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
 }
-
 h1 {
   font-weight: 300;
 }
@@ -162,11 +161,6 @@ nav li {
   font-size: 24px
 }
 
-.project-details-container {
-  position: absolute;
-  top: 86px;
-}
-
 .project-details {
   display: none;
   width: 1050px;
@@ -274,4 +268,26 @@ nav li {
     position: absolute;
     top: 146px;
   }
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+}
+
+.push {
+  height: 50px;
+}
+
+footer {
+  position: relative;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
 }
