@@ -1,9 +1,27 @@
-body {
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+html {
+    font-size: 62.5%;
 }
 
-/* Utility */
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
 .left {
   float: left;
@@ -20,6 +38,16 @@ a {
 
 a:hover {
   color: #444;
+}
+
+header {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
 }
 
 /* Navigation */
