@@ -9,8 +9,16 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
 }
+
 h1 {
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 300;
+  color: #bbb;
+  margin-top: 0;
 }
 
 .container {
