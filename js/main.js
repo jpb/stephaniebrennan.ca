@@ -52,7 +52,9 @@ $(document).ready(function() {
         var $this = $(this),
             originalPosition = $this.data('original-position');
         if(originalPosition) {
-          $this.show().animate(originalPosition);
+          $this.show().animate(originalPosition, function() {
+            $this.css({top: "", left: ""});
+          });
         }
       });
     });
