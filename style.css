@@ -244,6 +244,7 @@ nav li {
 .about-text {
   width: 450px;
   float: left;
+  padding-top: 70px;
 }
 
 .about-img {
