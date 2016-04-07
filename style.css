@@ -3,21 +3,27 @@ html {
 }
 
 body {
-    font-size: 1.5em;
-    line-height: 1.6;
-    font-weight: 300;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 0;
+  margin-top: 15px;
+}
+
+h1, h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-weight: 300;
-  color: #bbb;
   margin-top: 0;
 }
 
@@ -216,6 +222,18 @@ nav li {
 	background: #333;
 }
 
+.project-title {
+  text-align: right;
+  width: 350px;
+  margin-right: 50px;
+  float: left;
+}
+
+.project-description {
+  width: 450px;
+  float: left;
+}
+
 .about-container {
   display: none;
 }
@@ -258,6 +276,13 @@ nav li {
   .project-details img {
     width: 660px;
   }
+
+  .project-title, .project-description {
+    width: 100%;
+  }
+  .project-description {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 480px) {
@@ -278,6 +303,10 @@ nav li {
   .project-details-container {
     position: absolute;
     top: 146px;
+  }
+
+  .project-description {
+    width: 100%;
   }
 }
 
