@@ -271,17 +271,17 @@ nav li {
 }
 
 @media (max-width: 1200px) {
-  .projects li:nth-child(1) { top: 70px; left: 50px; }
-  .projects li:nth-child(2) { top: 70px; left: 450px; }
+  .projects li:nth-child(1) { top: 140px; left: 50px; }
+  .projects li:nth-child(2) { top: 140px; left: 450px; }
 
-  .projects li:nth-child(3) { top: 290px; left: 250px; }
-  .projects li:nth-child(4) { top: 290px; left: 650px; }
+  .projects li:nth-child(3) { top: 360px; left: 250px; }
+  .projects li:nth-child(4) { top: 360px; left: 650px; }
 
-  .projects li:nth-child(5) { top: 520px; left: 50px; }
-  .projects li:nth-child(6) { top: 520px; left: 450px; }
+  .projects li:nth-child(5) { top: 590px; left: 50px; }
+  .projects li:nth-child(6) { top: 590px; left: 450px; }
 
-  .projects li:nth-child(7) { top: 750px; left: 250px; }
-  .projects li:nth-child(8) { top: 750px; left: 650px; }
+  .projects li:nth-child(7) { top: 820px; left: 250px; }
+  .projects li:nth-child(8) { top: 820px; left: 650px; }
 
   .container,
   .project-details,
@@ -291,17 +291,17 @@ nav li {
 }
 
 @media (max-width: 840px) {
-  .projects li:nth-child(1) { top: 70px; left: 10px; }
-  .projects li:nth-child(2) { top: 70px; left: 350px; }
+  .projects li:nth-child(1) { top: 140px; left: 10px; }
+  .projects li:nth-child(2) { top: 140px; left: 350px; }
 
-  .projects li:nth-child(3) { top: 290px; left: 150px; }
-  .projects li:nth-child(4) { top: 290px; left: 480px; }
+  .projects li:nth-child(3) { top: 360px; left: 150px; }
+  .projects li:nth-child(4) { top: 360px; left: 480px; }
 
-  .projects li:nth-child(5) { top: 520px; left: 10px; }
-  .projects li:nth-child(6) { top: 520px; left: 350px; }
+  .projects li:nth-child(5) { top: 590px; left: 10px; }
+  .projects li:nth-child(6) { top: 590px; left: 350px; }
 
-  .projects li:nth-child(7) { top: 750px; left: 250px; }
-  .projects li:nth-child(8) { top: 750px; left: 480px; }
+  .projects li:nth-child(7) { top: 820px; left: 250px; }
+  .projects li:nth-child(8) { top: 820px; left: 480px; }
 
   .container,
   .project-details,
