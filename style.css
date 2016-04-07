@@ -19,7 +19,7 @@ h1 {
 h1, h2 {
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -225,7 +225,7 @@ nav li {
 .project-title {
   text-align: right;
   width: 350px;
-  margin-right: 50px;
+  margin-right: 20px;
   float: left;
 }
 
