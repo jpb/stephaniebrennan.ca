@@ -158,11 +158,9 @@ nav li {
 .projects .provision { background: url('images/provision-thumb@2x.jpg') top left; }
 .projects .wilhelm { background: url('images/wilhelm-thumb@2x.jpg') top left; }
 .projects .minx-uncommon-beer { background: url('images/minx-uncommon-beer-thumb@2x.jpg') top left; }
-.projects .minx-uncommon-beer a { color: #444; }
 .projects .lexus { background: url('images/lexus-thumb@2x.jpg') }
 .projects .js-floss { background: #444; }
 .projects .chorus { background: url('images/chorus-thumb.jpg') top left; }
-.projects .chorus a { color: #444; }
 
 .projects li {
   background-position: top left;
