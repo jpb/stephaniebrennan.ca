@@ -1,1 +1,3 @@
-$("#carousel").carousel().carousel("pause");
+$(document).ready(function() {
+  $("#carousel").carousel().carousel("pause");
+});
