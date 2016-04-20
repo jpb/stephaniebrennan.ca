@@ -1,0 +1,83 @@
+@font-face {
+        font-family: 'Avenir-Book';
+        src: url('../../Avenir-Book.eot');
+        src: url('../../Avenir-Book.eot?#iefix') format('embedded-opentype'),
+                url('../../Avenir-Book.woff') format('woff'),
+                url('../../Avenir-Book.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: '../../Avenir-Black';
+        src: url('../../Avenir-Black.eot');
+        src: url('../../Avenir-Black.eot?#iefix') format('embedded-opentype'),
+                url('../../Avenir-Black.woff') format('woff'),
+                url('../../Avenir-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+}
+
+
+body {
+  font-family: "Avenir-Book", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+h1 {
+  font-family: "Avenir-Black", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+nav li {
+  text-align: center;
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #222;
+}
+
+nav a.active {
+  font-family: "Avenir-Black", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav a:hover {
+  color: #222;
+}
+
+nav img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-inner .item {
+  text-align: center;
+}
+.item-wrapper {
+  width: auto;
+  height: auto;
+  max-width: 1000px;
+  max-height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100vh;
+}

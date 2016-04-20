@@ -1,5 +1,5 @@
 @font-face {
-        font-family: 'Avenir Book';
+        font-family: 'Avenir-Book';
         src: url('Avenir-Book.eot');
         src: url('Avenir-Book.eot?#iefix') format('embedded-opentype'),
                 url('Avenir-Book.woff') format('woff'),
@@ -19,7 +19,7 @@
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
