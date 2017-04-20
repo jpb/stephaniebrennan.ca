@@ -77,17 +77,7 @@ $(document).ready(function() {
     }
   }
 
-  function fixX() {
-    // var $body = $("body");
-    // if ($body[0].scrollTop > 215) {
-    //   $body.addClass("fixed");
-    // } else {
-    //   $body.removeClass("fixed");
-    // }
-  }
-
   navigateTo(window.location.hash);
-  fixX();
 
   $(document).on("keyup", escProject);
 
@@ -98,6 +88,4 @@ $(document).ready(function() {
     } catch (e) {}
     navigateTo(window.location.hash, oldHash);
   });
-
-  $(document).on("scroll", fixX);
 });
