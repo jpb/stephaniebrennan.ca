@@ -78,12 +78,12 @@ $(document).ready(function() {
   }
 
   function fixX() {
-    var $body = $("body");
-    if ($body[0].scrollTop > 215) {
-      $body.addClass("fixed");
-    } else {
-      $body.removeClass("fixed");
-    }
+    // var $body = $("body");
+    // if ($body[0].scrollTop > 215) {
+    //   $body.addClass("fixed");
+    // } else {
+    //   $body.removeClass("fixed");
+    // }
   }
 
   navigateTo(window.location.hash);
